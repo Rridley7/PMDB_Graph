@@ -1,0 +1,29 @@
+{
+  "name": "PMDB_graph",
+  "image_uri": "public.ecr.aws/saturncloud/saturn-python:2024.04.01",
+  "description": "Use distributed computing with Dask",
+  "extra_packages": {
+    "pip": "panel hvplot gdown datashader jupyter_bokeh fastparquet"
+  },
+  "working_directory": "/home/jovyan/workspace",
+  "git_repositories": [
+    {
+      "url": "https://github.com:Rridley7/PMDB_Graph",
+      "path": "/home/jovyan/workspace/PMDB_Graph"
+    }
+  ],
+  "jupyter_server": {
+    "disk_space": "10Gi",
+    "instance_type": "large"
+  },
+  "dask_cluster": {
+    "num_workers": 3,
+    "worker": {
+      "instance_type": "large"
+    },
+    "scheduler": {
+      "instance_type": "large"
+    }
+  },
+  "version": "2022.01.06"
+}
