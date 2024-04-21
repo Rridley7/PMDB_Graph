@@ -16,5 +16,5 @@
     "disk_space": "10Gi",
     "instance_type": "large"
   },
-  "version": "2024.04.01"
+  "version": "2022.01.06"
 }
