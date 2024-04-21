@@ -1,6 +1,6 @@
 {
   "name": "PMDB_graph",
-  "image_uri": "public.ecr.aws/saturncloud/saturn-python:2024.04.01",
+  "image_uri": "public.ecr.aws/saturncloud/saturn-python:2023.09.01",
   "description": "Use distributed computing with Dask",
   "extra_packages": {
     "pip": "panel hvplot gdown datashader jupyter_bokeh fastparquet"
