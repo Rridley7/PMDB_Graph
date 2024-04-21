@@ -1,4 +1,4 @@
-schema_version: 2023.09.01
+schema_version: 2024.04.01
 type: workspace
 spec:
   name: PMDB_graph
@@ -9,7 +9,7 @@ spec:
   working_directory: /home/jovyan/workspace
   extra_packages:
     pip:
-      install: panel hvplot gdown datashader jupyter_bokeh
+      install: panel hvplot gdown datashader jupyter_bokeh fastparquet
   start_script: ''
   git_repositories:
     - url: git@github.com:Rridley7/PMDB_Graph.git
@@ -25,4 +25,7 @@ spec:
   auto_shutoff: 1 hour
   start_ssh: false
   use_spot_instance: false
-  expose_app_port: false
+  routes:
+    - container_port: 8888
+      visibility: owner
+  viewers: []
